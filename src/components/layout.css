@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SofiaProLight';
+  src: url('../fonts/SofiaProLight.otf');
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,13 +12,23 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
+}
+header {
+  font-family: 'SofiaProLight', 'Playfair';
+}
+footer {
+  font-family: 'SofiaProLight', 'Playfair';
+  width: 100%;
+  background-color: black;
+  color: #FFF;
+  padding: 50px;
 }
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -61,6 +76,7 @@ dfn {
   font-style: italic;
 }
 h1 {
+  /* font-family: Georgia; */
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -209,6 +225,15 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+.a-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 82.5rem;
+  display: grid;
+  grid-gap: 30px;
+  padding: 0 8vw;
+  position: relative;
+}
 img {
   max-width: 100%;
   margin-left: 0;
@@ -230,9 +255,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  /* font-family: Playfair; */
+  font-weight: lighter;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -247,8 +271,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: futura-pt,sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
