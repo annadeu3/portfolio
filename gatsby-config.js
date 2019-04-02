@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        typekit: {
+        google: {
           families: ['futura-pt']
         }
       }
