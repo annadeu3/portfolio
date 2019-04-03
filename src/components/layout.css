@@ -1,6 +1,16 @@
 @font-face {
-  font-family: 'SofiaProLight';
-  src: url('../fonts/SofiaProLight.otf');
+  font-family: "SofiaProLight";
+  src: url("../fonts/SofiaProLight.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPTMedium.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("../fonts/FuturaPTBook.otf");
 }
 
 html {
@@ -12,16 +22,27 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 header {
-  font-family: 'SofiaProLight', 'Playfair';
+  font-family: "SofiaProLight", "Playfair";
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 0;
+}
+header .navLinksContainer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header .navLinksContainer .navLink {
+  padding: 0 10px;
 }
 footer {
-  font-family: 'futura-pt', 'sans-serif', 'Playfair';
+  font-family: "FuturaPTMedium", "sans-serif", "Playfair";
   width: 100%;
   background-color: black;
-  color: #FFF;
+  color: #fff;
   padding: 50px;
 }
 article,
@@ -29,7 +50,6 @@ aside,
 details,
 figcaption,
 figure,
-header,
 main,
 menu,
 nav,
@@ -271,7 +291,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: futura-pt,sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;

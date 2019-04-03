@@ -6,16 +6,10 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `#FAFAFA`,
-      marginBottom: `1.45rem`,
+      marginBottom: `3.80rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+    <div>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -27,6 +21,28 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div className="navLinksContainer">
+      <Link
+        className="navLink"
+        to="/projects"
+        style={{
+          color: `#000000`,
+          textDecoration: `none`,
+        }}
+      >
+        projects
+      </Link>
+      <Link
+        className="navLink"
+        to="/about"
+        style={{
+          color: `#000000`,
+          textDecoration: `none`,
+        }}
+      >
+        about
+      </Link>
     </div>
   </header>
 )
