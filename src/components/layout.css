@@ -28,7 +28,7 @@ header {
   font-family: "SofiaProLight", "Playfair";
   display: flex;
   flex-direction: row;
-  padding: 15px 15px 0;
+  padding: 35px 150px 0;
 }
 header .navLinksContainer {
   display: flex;
@@ -44,6 +44,16 @@ footer {
   background-color: black;
   color: #fff;
   padding: 50px;
+}
+
+.topic {
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 article,
 aside,
@@ -282,20 +292,17 @@ h1 {
   line-height: 1.1;
 }
 h2 {
-  margin-left: 0;
-  margin-right: 0;
+  padding: 0px 0px 0;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: "FuturaPTBook";
-  font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 55px;
 }
 h3 {
   margin-left: 0;
@@ -308,7 +315,7 @@ h3 {
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: "FuturaPTBook";
-  font-weight: bold;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
