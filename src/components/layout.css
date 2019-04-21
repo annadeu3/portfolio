@@ -28,7 +28,7 @@ header {
   font-family: "SofiaProLight", "Playfair";
   display: flex;
   flex-direction: row;
-  padding: 35px 150px 0;
+  padding: 30px 50px 0;
 }
 header .navLinksContainer {
   display: flex;
@@ -36,7 +36,7 @@ header .navLinksContainer {
   margin-left: auto;
 }
 header .navLinksContainer .navLink {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 footer {
   font-family: "FuturaPTMedium", "sans-serif", "Playfair";
@@ -48,6 +48,166 @@ footer {
 
 .topic {
   animation: caret 1s steps(1) infinite;
+}
+
+.project-title p {
+  display: inline-block;
+}
+
+.project-short-description {
+  display: block;
+}
+.project-short-description > p {
+  font-size: calc(0.8rem + 0.2vw);
+  display: block;
+  margin-top: 2.5vh;
+}
+
+.dash {
+  width: 20%;
+  padding-left: 0;
+  padding-right: 24px;
+  display: block;
+  height: 5px;
+  background-color: #201c1c;
+  margin-top: 0.9em;
+}
+
+.project-title {
+  z-index: 1;
+  flex: 1 30%;
+  align-self: center;
+  line-height: 1.7;
+}
+
+.project-title h1 span {
+  display: block;
+}
+
+.big-title h1 {
+  line-height: 1;
+  text-align: left;
+}
+
+#project1,
+#project2,
+#project3,
+#project4,
+#project5,
+#project6 {
+  overflow: hidden;
+}
+#project1 {
+  background: -webkit-linear-gradient(right, #feffc9 50%, white 50%);
+  background: -moz-linear-gradient(right, #feffc9 50%, white 50%);
+  background: linear-gradient(right, #feffc9 50%, white 50%);
+}
+
+#project2 {
+  background: -webkit-linear-gradient(left, #f9f9f9 50%, white 50%);
+  background: -moz-linear-gradient(left, #f9f9f9 50%, white 50%);
+  background: linear-gradient(left, #f9f9f9 50%, white 50%);
+}
+
+#project3 {
+  background: -webkit-linear-gradient(right, #cbfeea 50%, white 50%);
+  background: -moz-linear-gradient(right, #cbfeea 50%, white 50%);
+  background: linear-gradient(right, #cbfeea 50%, white 50%);
+}
+#project4 {
+  background: -webkit-linear-gradient(left, #ff9871 50%, white 50%);
+  background: -moz-linear-gradient(left, #ff9871 50%, white 50%);
+  background: linear-gradient(left, #ff9871 50%, white 50%);
+}
+
+#project7 {
+  background: -webkit-linear-gradient(right, #ffe9ff 50%, white 50%);
+  background: -moz-linear-gradient(right, #ffe9ff 50%, white 50%);
+  background: linear-gradient(right, #ffe9ff 50%, white 50%);
+}
+#project8 {
+  background: -webkit-linear-gradient(left, #9bd1e6 50%, white 50%);
+  background: -moz-linear-gradient(left, #9bd1e6 50%, white 50%);
+  background: linear-gradient(left, #9bd1e6 50%, white 50%);
+}
+#project6 {
+  background: -webkit-linear-gradient(left, #f9f9f9 50%, white 50%);
+  background: -moz-linear-gradient(left, #f9f9f9 50%, white 50%);
+  background: linear-gradient(left, #f9f9f9 50%, white 50%);
+}
+#project5 {
+  background: -webkit-linear-gradient(right, #e7dcf3 50%, white 50%);
+  background: -moz-linear-gradient(right, #e7dcf3 50%, white 50%);
+  background: linear-gradient(right, #e7dcf3 50%, white 50%);
+}
+
+#project2 .project-title,
+#project4 .project-title,
+#project6 .project-title,
+#project8 .project-title {
+  flex: 1 40%;
+  order: 2;
+  padding-right: 10%;
+  padding-left: 0%;
+}
+.project-container {
+  padding-left: 8%;
+  margin-top: 0;
+  display: flex;
+}
+
+.project-img img {
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+#project2 .project-img,
+#project4 .project-img,
+#project6 .project-img,
+#project8 .project-img {
+  padding-right: 0%;
+  padding-left: 0%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  flex: 1 60%;
+  height: 100%;
+  width: 100%;
+  margin-right: 8%;
+  margin-left: 0%;
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.4);
+}
+#project1 .project-img,
+#project3 .project-img,
+#project5 .project-img,
+#project7 .project-img {
+  overflow: hidden;
+  transform-style: preserve-3d;
+  flex: 1 60%;
+  height: 100%;
+  width: 100%;
+  margin-right: 8%;
+  margin-left: 5%;
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.4);
+}
+#project2 .project-img img:hover,
+#project3 .project-img img:hover,
+#project4 .project-img img:hover,
+#project5 .project-img img:hover,
+#project6 .project-img img:hover,
+#project7 .project-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @keyframes caret {

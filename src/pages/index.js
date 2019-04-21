@@ -84,9 +84,21 @@ class IndexPage extends React.Component {
           </span>
         </h3>
 
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
-        </div>
+        <section id="project1" class="section">
+  <div class="project-container">
+   <div class="project-title">
+     <h1 class="big-title"> CSL</h1>
+     <div class="project-short-description">
+     <div class="dash"> </div>
+        <p> Led the UX Design of the website redesign of CSL and CSL Behring, a global specialty biotechnology company.</p>
+     </div>
+   </div>
+ 
+   <div class="project-img">
+     <img src="images/csl.png">
+   </div>
+  </div>
+ </section>
         <Link to="/projects/">Go to page 2</Link>
       </Layout>
     )
