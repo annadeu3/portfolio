@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import poop from "../images/csl.png"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -85,20 +86,24 @@ class IndexPage extends React.Component {
         </h3>
 
         <section id="project1" class="section">
-  <div class="project-container">
-   <div class="project-title">
-     <h1 class="big-title"> CSL</h1>
-     <div class="project-short-description">
-     <div class="dash"> </div>
-        <p> Led the UX Design of the website redesign of CSL and CSL Behring, a global specialty biotechnology company.</p>
-     </div>
-   </div>
- 
-   <div class="project-img">
-     <img src="images/csl.png">
-   </div>
-  </div>
- </section>
+          <div class="project-container">
+            <div class="project-title">
+              <h1 class="big-title"> CSL</h1>
+              <div class="project-short-description">
+                <div class="dash"> </div>
+                <p>
+                  {" "}
+                  Led the UX Design of the website redesign of CSL and CSL
+                  Behring, a global specialty biotechnology company.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-img">
+              <img src={poop} />
+            </div>
+          </div>
+        </section>
         <Link to="/projects/">Go to page 2</Link>
       </Layout>
     )

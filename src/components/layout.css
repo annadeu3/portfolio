@@ -13,6 +13,19 @@
   src: url("../fonts/FuturaPTBook.otf");
 }
 
+.social-links-container {
+  display: flex;
+}
+
+.social-links-container a:not(:first-child) {
+  padding-left: 15px;
+}
+
+.social-links-container a {
+  font-size: 18px;
+  color: #ffffff;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -215,6 +228,7 @@ footer {
     border-color: transparent;
   }
 }
+
 article,
 aside,
 details,
@@ -760,7 +774,7 @@ samp {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
-abbr {
+/* abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
@@ -806,8 +820,8 @@ code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-}
-pre code {
+} */
+/* pre code {
   background: none;
   line-height: 1.42;
 }
@@ -828,4 +842,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */

@@ -12,10 +12,12 @@ const Footer = () => (
       </section>
       <div className="social">
         <h5>Find me online</h5>
-        <p>LinkedIn</p>
-        <p>Twitter</p>
-        <p>Medium</p>
-        <p>Instagram</p>
+        <div className="social-links-container">
+          <a href="https://www.linkedin.com/in/annadeu/">LinkedIn</a>
+          <a href="https://twitter.com/Honeydeu">Twitter</a>
+          <a href="https://medium.com/@annadeu">Medium</a>
+          <a href="https://www.instagram.com/anna.deu/">Instagram</a>
+        </div>
       </div>
       {new Date().getFullYear()}
     </div>
