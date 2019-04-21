@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: ".env.${process.env.NODE_ENV",
+})
+
 module.exports = {
   siteMetadata: {
     title: `anna deu`,
@@ -6,6 +10,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "kimhdi8pco8u",
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["source sans pro:400"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
