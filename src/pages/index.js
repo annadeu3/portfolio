@@ -20,7 +20,7 @@ class IndexPage extends React.Component {
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   typeWriter = (text, i, fnCallback) => {
-    // chekc if text isn't finished yet
+    // check if text isn't finished yet
     if (i < text.length) {
       // add next character to h1
       console.log("text chage")
@@ -72,11 +72,13 @@ class IndexPage extends React.Component {
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <h2>hello.</h2>
         <h2>
-          UX Designer based in NYC—
-          <br />
+          <strong>UX Designer based in NYC—</strong>
+        </h2>
+
+        <h3>
           Currently at Vertic, creating intentional and thoughtful experiences
           for users.
-        </h2>
+        </h3>
         <h3>
           I'm always happy to chat about
           <br />
@@ -84,7 +86,8 @@ class IndexPage extends React.Component {
             User experience design
           </span>
         </h3>
-
+        <br />
+        <br />
         <section id="project1" class="section">
           <div class="project-container">
             <div class="project-title">
@@ -104,6 +107,72 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <br />
+        <br />
+        <br />
+        <section id="project2" class="section">
+          <div class="project-container">
+            <div class="project-title">
+              <h1 class="big-title"> SAP Ariba Brand Tool</h1>
+              <div class="project-short-description">
+                <div class="dash"> </div>
+                <p>
+                  {" "}
+                  Designed a new brand central for users to access the SAP Ariba
+                  brand assets and images.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-img">
+              <img src={poop} />
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
+        <section id="project3" class="section">
+          <div class="project-container">
+            <div class="project-title">
+              <h1 class="big-title"> GDPR Benchmark</h1>
+              <div class="project-short-description">
+                <div class="dash"> </div>
+                <p>
+                  {" "}
+                  Designed an assessment tool used to assess the readiness
+                  towards being GDPR compliant
+                </p>
+              </div>
+            </div>
+
+            <div class="project-img">
+              <img src={poop} />
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
+        <section id="project4" class="section">
+          <div class="project-container">
+            <div class="project-title">
+              <h1 class="big-title"> Barter Sugar</h1>
+              <div class="project-short-description">
+                <div class="dash"> </div>
+                <p>
+                  {" "}
+                  Strategy and design of a global marketplace experience where
+                  people can connect to trade goods, services, and spaces
+                </p>
+              </div>
+            </div>
+
+            <div class="project-img">
+              <img src={poop} />
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
         <Link to="/projects/">Go to page 2</Link>
       </Layout>
     )

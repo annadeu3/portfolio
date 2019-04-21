@@ -6,9 +6,13 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Projects" />
     <h1>Projects</h1>
-    <p>List of case studies</p>
+    <p>
+      Working with clients to identify key performance goals through iterative
+      design, rapid prototyping, and optimization.
+    </p>
+    <br />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
